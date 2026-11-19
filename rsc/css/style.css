@@ -1,0 +1,243 @@
+:root{
+    --navy:#0B1530;
+    --dblue:#12306B;
+    --blue:#2A75BB;
+    --slate:#2F3A4A;
+    --yellow:#FFCB05;
+    --lyellow:#FFF6CC;
+    --lgray:#E9EDF2
+}
+
+body{
+    background:var(--lgray);
+    color:var(--slate);
+    font-family:system-ui,
+    -apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    line-height:1.65
+}
+
+h1,h2,h3,h4,h5,h6,
+.brand-title{
+    font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif;
+    color:var(--navy);
+    font-weight:800
+}
+
+a{
+    color:#1F4E96
+}
+
+.hero h1,.page-hero h1,
+.site-header .brand-title,
+.site-footer .brand-title{
+    color:#fff
+}
+
+.site-header
+.navbar{
+    background:var(--navy);
+    border-bottom:3px solid var(--yellow)
+}
+
+.site-header
+.brand-title{
+    font-size:1.05rem
+}
+
+.site-header
+.nav-link{
+    color:#E9EDF2;
+    font-weight:600
+}
+
+.site-header
+.nav-link:hover,
+.site-header
+.nav-link.active{
+    color:var(--yellow)
+}
+
+.cart-badge{
+    background:var(--yellow);
+    color:var(--navy)
+}
+
+.hero{
+    min-height:520px;
+    background:linear-gradient(rgba(11,21,48,.55),rgba(11,21,48,.8)),url("../../media/img/hero.jpg") center/cover no-repeat
+}
+
+.page-hero{
+    background:linear-gradient(rgba(11,21,48,.75),rgba(11,21,48,.9)),url("../../media/img/hero.jpg") center/cover no-repeat
+}
+
+.hero-lead{
+    max-width:40rem
+}
+
+.eyebrow{
+    text-transform:uppercase;
+    letter-spacing:.18em;
+    font-size:.8rem;
+    color:var(--yellow);
+    font-weight:700
+}
+
+.section{
+    padding:3.5rem 0
+}
+
+.band{
+    background:var(--lyellow)
+}
+
+.section-title{
+    font-size:2rem;
+    margin-bottom:1.25rem;
+    position:relative;
+    padding-bottom:.6rem
+}
+
+.section-title::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:64px;
+    height:5px;
+    background:var(--yellow);
+    border-radius:3px
+}
+
+.info dt{
+    color:var(--navy)
+}
+
+.hl-card,
+.product-card,
+.char-card{
+    border:0;
+    border-radius:16px;
+    box-shadow:0 4px 16px rgba(11,21,48,.12);
+    overflow:hidden;
+    background:#fff
+}
+
+.hl-card{
+    border-top:5px solid var(--blue)
+}
+
+.hl-card h3{
+    color:var(--dblue)
+}
+
+.product-card{
+    transition:transform .2s
+}
+
+.product-card:hover{
+    transform:translateY(-4px)
+}
+
+.card-img-top{
+    height:auto
+}
+
+.price{
+    font-weight:800;
+    color:var(--dblue)
+}
+
+.char-card.pro{
+    border-left:6px solid var(--yellow)
+}
+
+.char-card.ant{
+    border-left:6px solid var(--slate)
+}
+
+.badge-pro{
+    background:var(--yellow);
+    color:var(--navy)
+}
+
+.badge-ant{
+    background:var(--navy);color:#fff
+}
+
+.btn-warning{
+    background:var(--yellow);
+    border-color:var(--yellow);
+    color:var(--navy);
+    font-weight:700
+}
+
+.btn-warning:hover{
+    background:#FFD83D;
+    border-color:#FFD83D;
+    color:var(--navy)
+}
+
+.poster{
+    max-height:560px;
+    object-fit:cover
+}
+
+.site-footer{
+    background:var(--navy);
+    color:#E9EDF2;
+    border-top:4px solid var(--yellow)
+}
+
+.site-footer a{
+    color:#E9EDF2;
+    text-decoration:none
+}
+
+.site-footer a:hover{
+    color:var(--yellow)
+}
+
+.site-footer .footer-h{
+    color:var(--yellow);
+    letter-spacing:.1em
+}
+
+.social{
+    display:inline-flex;
+    color:#E9EDF2
+}
+.social:hover{
+    color:var(--yellow)
+}
+
+html{
+    scroll-behavior:smooth
+}
+
+#cinema{
+    scroll-margin-top:72px
+}
+.visually-hidden-focusable:focus{
+    position:fixed;
+    top:8px;
+    left:8px;
+    z-index:2000;
+    background:#fff;
+    padding:.5rem 1rem
+}
+
+.site-header .navbar-brand img,
+.site-footer img[alt="Movie logo"] {
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.product-img
+.char-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}

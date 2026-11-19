@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products | Pokémon: I Choose You!</title>
+
+<meta name="description" content="Fan-made promotion website for the animated film Pokémon: I Choose You!.">
+<link rel="icon" href="media/img/logo.jpg" type="image/svg+xml">
+<link rel="stylesheet" href="rsc/css/bootstrap.min.css">
+<link rel="stylesheet" href="rsc/css/style.css">
+</head>
+
+<body>
+<a class="visually-hidden-focusable" href="#main">Skip to content</a>
+<header class="site-header sticky-top">
+<nav class="navbar navbar-expand-md navbar-dark">
+<div class="container">
+<a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+    <img src="media/img/logo.jpg" alt="Movie logo" width="40" height="40">
+    <span class="brand-title">Pokémon: I Choose You!</span>
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav"
+aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="mainNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html#cinema">Cinema</a></li>
+<li class="nav-item"><a class="nav-link" href="characters.html">Characters</a></li>
+<li class="nav-item"><a class="nav-link active" aria-current="page" href="products.html">Products 
+    <span class="badge rounded-pill cart-badge cart-count">0</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+
+<main id="main">
+<section class="page-hero text-center text-white">
+    <div class="container py-5">
+        <p class="eyebrow">Fan merch (sample store)</p>
+        <h1 class="display-4 brand-title">Products</h1>
+
+<button type="button" class="btn btn-outline-light mt-3" data-bs-toggle="offcanvas"
+data-bs-target="#cartPanel" aria-controls="cartPanel">View Cart (
+    <span class="cart-count">0</span>)
+</button>
+</div>
+</section>
+
+<section class="container section">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <div class="col">
+            <div class="card h-100 product-card">
+                <img src="media/img/merch-plush.avif" class="card-img-top"
+                alt="Pikachu Plush (placeholder image)" width="600" height="600" loading="lazy">
+                <div class="card-body d-flex flex-column">
+                    <h2 class="h5 card-title">Pikachu Plush</h2>
+                    <p class="card-text flex-grow-1">Soft plush toy for hugging and collecting.</p>
+                    <p class="price mb-3">PHP 450</p>
+                    <button type="button" class="btn btn-warning w-100 add-to-cart"
+                    data-id="plush" data-name="Pikachu Plush" data-price="450" data-img="media/img/merch-plush.avif">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 product-card">
+                <img src="media/img/merch-cap.webp" class="card-img-top" alt="Trainer Cap (placeholder image)"
+                width="600" height="600" loading="lazy">
+                <div class="card-body d-flex flex-column">
+                    <h2 class="h5 card-title">Trainer Cap</h2>
+                    <p class="card-text flex-grow-1">Adjustable cap in navy and yellow.</p>
+                    <p class="price mb-3">PHP 380</p>
+                    <button type="button" class="btn btn-warning w-100 add-to-cart" data-id="cap"
+                    data-name="Trainer Cap" data-price="380" data-img="media/img/merch-cap.webp">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card h-100 product-card">
+                <img src="media/img/merch-mug.jpg" class="card-img-top" alt="Movie Mug (placeholder image)"
+                width="600" height="600" loading="lazy">
+                <div class="card-body d-flex flex-column">
+                    <h2 class="h5 card-title">Movie Mug</h2>
+                    <p class="card-text flex-grow-1">Glazed ceramic mug, 350 ml.</p>
+                    <p class="price mb-3">PHP 320</p>
+                    <button type="button" class="btn btn-warning w-100 add-to-cart"
+                    data-id="mug" data-name="Movie Mug" data-price="320" data-img="media/img/merch-mug.jpg">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 product-card">
+                <img src="media/img/merch-tote.jpg" class="card-img-top"
+                alt="Canvas Tote Bag (placeholder image)" width="600" height="600" loading="lazy">
+                <div class="card-body d-flex flex-column">
+                    <h2 class="h5 card-title">Canvas Tote Bag</h2>
+                    <p class="card-text flex-grow-1">Sturdy cotton tote for books and groceries.</p>
+                    <p class="price mb-3">PHP 380</p>
+                    <button type="button" class="btn btn-warning w-100 add-to-cart" data-id="tote"
+                    data-name="Canvas Tote Bag" data-price="380" data-img="media/img/merch-tote.jpg">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 product-card">
+                <img src="media/img/merch-tee.avif" class="card-img-top" alt="Graphic T-Shirt (placeholder image)"
+                width="600" height="600" loading="lazy">
+                <div class="card-body d-flex flex-column">
+                    <h2 class="h5 card-title">Graphic T-Shirt</h2>
+                    <p class="card-text flex-grow-1">Cotton tee with movie artwork, unisex sizes.</p>
+                    <p class="price mb-3">PHP 650</p>
+                    <button type="button" class="btn btn-warning w-100 add-to-cart" data-id="tee"
+                    data-name="Graphic T-Shirt" data-price="650" data-img="media/img/merch-tee.avif">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 product-card">
+                <img src="media/img/merch-poster-print.png" class="card-img-top"
+                alt="Art Print (A3) (placeholder image)" width="600" height="600" loading="lazy">
+                <div class="card-body d-flex flex-column">
+                    <h2 class="h5 card-title">Art Print (A3)</h2>
+                    <p class="card-text flex-grow-1">Glossy A3 print of a key scene.</p>
+                    <p class="price mb-3">PHP 280</p>
+                    <button type="button" class="btn btn-warning w-100 add-to-cart"
+                    data-id="poster-print" data-name="Art Print (A3)" data-price="280"
+                    data-img="media/img/merch-poster-print.png">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 product-card">
+                <img src="media/img/merch-keychain.webp" class="card-img-top" 
+                alt="Rainbow Wing Keychain (placeholder image)" width="600" height="600"
+                loading="lazy">
+                <div class="card-body d-flex flex-column">
+                    <h2 class="h5 card-title">Rainbow Wing Keychain</h2>
+                    <p class="card-text flex-grow-1">Acrylic keychain with metal ring.</p>
+                    <p class="price mb-3">PHP 150</p>
+                    <button type="button" class="btn btn-warning w-100 add-to-cart" data-id="keychain"
+                    data-name="Rainbow Wing Keychain" data-price="150"
+                    data-img="media/img/merch-keychain.webp">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card h-100 product-card">
+                <img src="media/img/merch-notebook.jpg" class="card-img-top"
+                alt="Hardcover Notebook (placeholder image)" width="600" height="600"
+                loading="lazy"><div class="card-body d-flex flex-column">
+                    <h2 class="h5 card-title">Hardcover Notebook</h2>
+                    <p class="card-text flex-grow-1">A5 notebook with 120 lined pages.</p>
+                    <p class="price mb-3">PHP 260</p>
+                    <button type="button" class="btn btn-warning w-100 add-to-cart"
+                    data-id="notebook" data-name="Hardcover Notebook" data-price="260"
+                    data-img="media/img/merch-notebook.jpg">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 product-card">
+                <img src="media/img/merch-pin.jpg" class="card-img-top" 
+                alt="Enamel Pin Set (placeholder image)" 
+                width="600" height="600" loading="lazy">
+                <div class="card-body d-flex flex-column">
+                    <h2 class="h5 card-title">Enamel Pin Set</h2>
+                    <p class="card-text flex-grow-1">Set of two collectible enamel pins.</p>
+                    <p class="price mb-3">PHP 220</p>
+                    <button type="button" class="btn btn-warning w-100 add-to-cart" 
+                    data-id="pin" data-name="Enamel Pin Set" data-price="220" 
+                    data-img="media/img/merch-pin.jpg">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 product-card">
+                <img src="media/img/merch-stickers.png" class="card-img-top"
+                alt="Sticker Pack (placeholder image)" width="600" height="600" 
+                loading="lazy"><div class="card-body d-flex flex-column">
+                    <h2 class="h5 card-title">Sticker Pack</h2>
+                    <p class="card-text flex-grow-1">Pack of 10 waterproof vinyl stickers.</p>
+                    <p class="price mb-3">PHP 120</p>
+                    <button type="button" class="btn btn-warning w-100 add-to-cart" 
+                    data-id="stickers" data-name="Sticker Pack" data-price="120" 
+                    data-img="media/img/merch-stickers.png">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 product-card">
+                <img src="media/img/merch-bottle.webp" class="card-img-top" 
+                alt="Water Bottle (placeholder image)" width="600" height="600" 
+                loading="lazy">
+                <div class="card-body d-flex flex-column">
+                    <h2 class="h5 card-title">Water Bottle</h2>
+                    <p class="card-text flex-grow-1">Insulated stainless bottle, 500 ml.</p>
+                    <p class="price mb-3">PHP 520</p>
+                    <button type="button" class="btn btn-warning w-100 add-to-cart" 
+                    data-id="bottle" data-name="Water Bottle" data-price="520" 
+                    data-img="media/img/merch-bottle.webp">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 product-card">
+                <img src="media/img/merch-mousepad.jpg" class="card-img-top" 
+                alt="Desk Mouse Pad (placeholder image)" width="600" height="600" 
+                loading="lazy">
+                <div class="card-body d-flex flex-column">
+                    <h2 class="h5 card-title">Desk Mouse Pad</h2>
+                    <p class="card-text flex-grow-1">Large non-slip mouse pad.</p>
+                    <p class="price mb-3">PHP 350</p>
+                    <button type="button" class="btn btn-warning w-100 add-to-cart" 
+                    data-id="mousepad" data-name="Desk Mouse Pad" data-price="350" 
+                    data-img="media/img/merch-mousepad.jpg">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartPanel" aria-labelledby="cartPanelLabel">
+<div class="offcanvas-header">
+    <h2 class="offcanvas-title h5" id="cartPanelLabel">Your Cart</h2>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+
+<div class="offcanvas-body d-flex flex-column">
+<ul class="list-group mb-3" id="cartList"></ul>
+<p id="cartEmpty" class="text-muted">Your cart is empty.</p>
+<div class="mt-auto">
+<p class="d-flex justify-content-between fw-bold fs-5">
+    <span>Total</span>
+    <span id="cartTotal">PHP 0</span>
+
+</p>
+<button type="button" class="btn btn-warning w-100 mb-2" id="checkoutBtn">Checkout</button>
+<button type="button" class="btn btn-outline-secondary w-100" id="clearBtn">Clear Cart</button>
+</div></div></div>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="cartToast" class="toast" role="status" aria-live="polite" aria-atomic="true">
+        <div class="toast-body" id="cartToastBody">Added to cart.</div>
+    </div>
+</div>
+
+</main>
+<footer class="site-footer mt-5">
+<div class="container py-5">
+<div class="row g-4">
+<div class="col-md-4">
+<div class="d-flex align-items-center gap-2 mb-3">
+    <img src="media/img/logo.jpg" alt="Movie logo" width="48" height="48">
+    <span class="brand-title fs-5">Pokémon: I Choose You!</span>
+</div>
+
+<p class="small mb-3">Email: pokemonichooseyou@gmail.com</p>
+<p class="small mb-3">Facebook: Pokemon I Choose You</p>
+<p class="small mb-3">Youtube: Pokemon IChooseYou</p>
+<div class="d-flex gap-2">
+</div>
+</div>
+
+<div class="col-md-4">
+<h2 class="h6 text-uppercase footer-h">Developed by</h2>
+<ul class="list-unstyled mb-0">
+<li>Gaoat, Rachelle Ann A.</li>
+<li>Domingo, Gabriel</li>
+<li>Buenaluz, James Bryan</li>
+<li>Jimenez, Tristan</li>
+</ul>
+</div>
+
+<div class="col-md-4">
+<h2 class="h6 text-uppercase footer-h">Menu</h2>
+<ul class="list-unstyled mb-0">
+<li><a href="index.html">Feature Page</a></li>
+<li><a href="index.html#cinema">Cinema</a></li>
+<li><a href="characters.html">Characters</a></li>
+<li><a href="products.html">Products</a></li>
+</ul></div>
+</div>
+</div>
+</footer>
+
+<script src="rsc/js/bootstrap.bundle.min.js"></script>
+<script src="rsc/js/main.js"></script>
+</body>
+</html>
